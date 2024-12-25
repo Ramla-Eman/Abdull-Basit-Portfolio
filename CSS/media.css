@@ -19,6 +19,26 @@
     .about-me .aboutRight #Ellipse {
         left: 2rem;
     }
+
+    .contact {
+        padding: 8rem 0;
+    }
+
+    .contact .contactLeft h2 {
+        font-size: 5.5rem;
+    }
+
+    .contact .contactLeft #vector4 {
+        left: 0;
+    }
+
+    .contact .contactLeft #contactImg {
+        left: 16rem;
+    }
+
+    .contact .contactRight #mail {
+        right: 4rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -43,6 +63,24 @@
     .about-me .aboutRight {
         height: 35rem;
     }
+
+    .contact {
+        gap: 0;
+    }
+
+    .contact .contactLeft #contactImg {
+        width: 25rem;
+    }
+
+    .contact .contactLeft #vector4 {
+        display: none;
+    }
+
+    .contact .contactRight form .input:nth-child(1),
+    .contact .contactRight form .input:nth-child(2) {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -84,12 +122,12 @@
         width: 40rem;
     }
 
-    .about-me{
+    .about-me {
         flex-direction: column;
         gap: 5rem;
     }
 
-    .about-me .abouLeft{
+    .about-me .abouLeft {
         width: 100%;
     }
 
@@ -97,7 +135,7 @@
         width: 50rem;
     }
 
-    .about-me .aboutRight #aboutImg{
+    .about-me .aboutRight #aboutImg {
         width: 50rem;
     }
 
@@ -106,6 +144,21 @@
     }
 
     .about-me .aboutRight #Ellipse {
+        display: none;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 8rem 4rem;
+    }
+
+    .contact .contactRight {
+        width: 100%;
+    }
+
+    .contact .contactLeft #contactImg,
+    .contact .contactRight #mail,
+    .contact .contactRight #keyboard {
         display: none;
     }
 }

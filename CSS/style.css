@@ -27,11 +27,16 @@ header {
 
 /* Navbar Styling */
 header nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
     border-bottom: 1px solid #eeeeee59;
+    position: fixed;
+    background: #222831;
+    z-index: 1000000000;
+    box-shadow: 0 3px 4px rgba(27, 27, 27, 0.8);
 }
 
 header nav .logo {
@@ -117,7 +122,6 @@ header .main-section .right-main #profileImg {
     display: flex;
     justify-content: space-evenly;
     padding: 4rem 5rem;
-    border-bottom: 1px solid #eeeeee59;
 }
 
 .about-me .abouLeft {
@@ -176,3 +180,212 @@ header .main-section .right-main #profileImg {
     left: 10rem;
     bottom: 0;
 }
+
+/* Works section styling */
+.works {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: url("../img/Projects\ Page.png");
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 4rem 10rem;
+}
+
+.works h2 {
+    font-size: 6.4rem;
+    color: #EEEEEE;
+}
+
+.works h2 span {
+    color: #00ADB5;
+}
+
+.works .worksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.works .worksContainer .worksCard {
+    width: 30rem;
+    background: #393e4670;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.works p {
+    text-align: center;
+}
+
+.works p a {
+    text-align: center;
+    font-size: 2rem;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.works p a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section styling */
+.contact {
+    width: 100%;
+    height: auto;
+    padding: 8rem;
+    gap: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #eeeeee59;
+}
+
+.contact .contactLeft {
+    position: relative;
+}
+
+.contact .contactLeft h2 {
+    font-size: 6.4rem;
+    color: #EEEEEE;
+}
+
+.contact .contactLeft h2 span {
+    color: #00ADB5;
+}
+
+.contact .contactLeft #vector4 {
+    position: absolute;
+    top: 25rem;
+    left: 8rem;
+}
+
+.contact .contactLeft #contactImg {
+    position: absolute;
+    top: 13rem;
+    left: 25rem;
+}
+
+.contact .contactRight {
+    width: 40%;
+    position: relative;
+}
+
+.contact .contactRight form {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact .contactRight form .input:nth-child(1),
+.contact .contactRight form .input:nth-child(2) {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .contactRight form .input:nth-child(3) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .contactRight form .input label {
+    font-size: 1.8rem;
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+.contact .contactRight form .input input[type="text"],
+.contact .contactRight form .input input[type="email"],
+.contact .contactRight form .input textarea {
+    border-radius: 15px;
+    border: none;
+    background: #393e4665;
+    padding: 1.6rem 2.4rem;
+    font-size: 1.8rem;
+    color: #EEEEEE;
+}
+
+.contact .contactRight form .input textarea {
+    height: 15rem;
+}
+
+.contact .contactRight form .input input[type="text"]::placeholder,
+.contact .contactRight form .input input[type="email"]::placeholder,
+.contact .contactRight form .input textarea::placeholder {
+    color: #EEEEEE;
+    opacity: 50%;
+}
+
+.contact .contactRight form button {
+    background: #00ADB5;
+    color: #EEEEEE;
+    border-radius: 24px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 5px 2px rgba(32, 32, 32, 0.404);
+    padding: 1rem 3.2rem;
+    border: none;
+    text-align: center;
+}
+
+.contact .contactRight form button i {
+    margin-left: 2rem;
+}
+
+.contact .contactRight form button:hover {
+    background: #393E46;
+}
+
+.contact .contactRight #mail {
+    position: absolute;
+    right: 15rem;
+}
+
+footer{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+footer .textLinks{
+    display: flex;
+    gap: 5rem;
+}
+
+footer .textLinks a{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1.8rem;
+}
+
+footer .links{
+    display: flex;
+    gap: 3rem;
+}
+
+footer .links a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 1.7rem;
+    border-radius: 50%;
+    background: #393E46;
+    color: #EEEEEE;
+    opacity: 75%;
+}
+
+footer p {
+    font-size: 1.8rem;
+    color: #eeeeee;
+    opacity: 75%;
+}
+
