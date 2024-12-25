@@ -1,0 +1,123 @@
+@media (max-width: 1024px) {
+    html {
+        font-size: 60%;
+    }
+
+    header .main-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-me .aboutRight img:nth-child(1) {
+        width: 40rem;
+    }
+
+    .about-me .aboutRight #aboutImg {
+        left: 0;
+    }
+
+    .about-me .aboutRight #Ellipse {
+        left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .about-me .abouLeft #arrowUp,
+    .about-me .abouLeft #lightBulb,
+    .about-me .abouLeft #musicSign {
+        display: none;
+    }
+
+    .about-me .abouLeft {
+        padding: 0;
+    }
+
+    .about-me .abouLeft h2 {
+        font-size: 6rem;
+    }
+
+    .about-me .aboutRight {
+        height: 35rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 60%;
+    }
+
+    header nav {
+        padding: 2rem;
+    }
+
+    header nav ul {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 45%;
+    }
+
+    header .main-section .main-left img {
+        display: none;
+    }
+
+    header .main-section .main-left h1 {
+        font-size: 7rem;
+    }
+
+    header .main-section .main-left h1 span {
+        font-size: 5.5rem;
+    }
+
+    header .main-section .right-main img:nth-child(1) {
+        width: 50rem;
+    }
+
+    header .main-section .right-main #profileImg {
+        width: 40rem;
+    }
+
+    .about-me{
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .about-me .abouLeft{
+        width: 100%;
+    }
+
+    .about-me .aboutRight img:nth-child(1) {
+        width: 50rem;
+    }
+
+    .about-me .aboutRight #aboutImg{
+        width: 50rem;
+    }
+
+    .about-me .aboutRight #aboutImg {
+        bottom: 0;
+    }
+
+    .about-me .aboutRight #Ellipse {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 35%;
+    }
+}
